@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.33027.164
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RegisterPeople.API", "RegisterPeople.API\RegisterPeople.API.csproj", "{A1EC90C8-6A94-47D4-8832-19230B2AE015}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RegisterPeople.Application", "RegisterPeople.Application\RegisterPeople.Application.csproj", "{949FAAC1-A0E7-41FD-83DC-883FE9208503}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RegisterPeople.Infrastructure", "RegisterPeople.Infrastructure\RegisterPeople.Infrastructure.csproj", "{07F62E1B-D0CB-40B6-A134-DB8709B0CD75}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RegisterPeople.Domain", "RegisterPeople.Domain\RegisterPeople.Domain.csproj", "{F6063C2C-B425-40A2-8118-8669B0332E7F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RegisterPeople.CrossCutting", "RegisterPeople.CrossCutting\RegisterPeople.CrossCutting.csproj", "{20629DCF-2749-423E-A394-DC1DF8D7129E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RegisterPeople.Tests", "RegisterPeople.Tests\RegisterPeople.Tests.csproj", "{2944FC7A-ECA3-489C-8357-0C8F2624C082}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A1EC90C8-6A94-47D4-8832-19230B2AE015}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1EC90C8-6A94-47D4-8832-19230B2AE015}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1EC90C8-6A94-47D4-8832-19230B2AE015}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1EC90C8-6A94-47D4-8832-19230B2AE015}.Release|Any CPU.Build.0 = Release|Any CPU
+		{949FAAC1-A0E7-41FD-83DC-883FE9208503}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{949FAAC1-A0E7-41FD-83DC-883FE9208503}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{949FAAC1-A0E7-41FD-83DC-883FE9208503}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{949FAAC1-A0E7-41FD-83DC-883FE9208503}.Release|Any CPU.Build.0 = Release|Any CPU
+		{07F62E1B-D0CB-40B6-A134-DB8709B0CD75}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07F62E1B-D0CB-40B6-A134-DB8709B0CD75}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07F62E1B-D0CB-40B6-A134-DB8709B0CD75}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07F62E1B-D0CB-40B6-A134-DB8709B0CD75}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6063C2C-B425-40A2-8118-8669B0332E7F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6063C2C-B425-40A2-8118-8669B0332E7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6063C2C-B425-40A2-8118-8669B0332E7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6063C2C-B425-40A2-8118-8669B0332E7F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{20629DCF-2749-423E-A394-DC1DF8D7129E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20629DCF-2749-423E-A394-DC1DF8D7129E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20629DCF-2749-423E-A394-DC1DF8D7129E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20629DCF-2749-423E-A394-DC1DF8D7129E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2944FC7A-ECA3-489C-8357-0C8F2624C082}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2944FC7A-ECA3-489C-8357-0C8F2624C082}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2944FC7A-ECA3-489C-8357-0C8F2624C082}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2944FC7A-ECA3-489C-8357-0C8F2624C082}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1C4DD273-88B2-4788-A1C6-5F44CC20A8D0}
+	EndGlobalSection
+EndGlobal
