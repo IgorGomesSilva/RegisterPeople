@@ -1,6 +1,6 @@
 ﻿namespace RegisterPeople.Application
 {
-    class AddressApplicationService
+    public class AddressApplicationService
     {
     }
 }
