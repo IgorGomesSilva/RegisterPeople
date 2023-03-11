@@ -1,0 +1,15 @@
+C:\Dev\RegisterPeople\src\RegisterPeople\RegisterPeople.Infrastructure\bin\Debug\net5.0\RegisterPeople.Infrastructure.deps.json
+C:\Dev\RegisterPeople\src\RegisterPeople\RegisterPeople.Infrastructure\bin\Debug\net5.0\RegisterPeople.Infrastructure.dll
+C:\Dev\RegisterPeople\src\RegisterPeople\RegisterPeople.Infrastructure\bin\Debug\net5.0\ref\RegisterPeople.Infrastructure.dll
+C:\Dev\RegisterPeople\src\RegisterPeople\RegisterPeople.Infrastructure\bin\Debug\net5.0\RegisterPeople.Infrastructure.pdb
+C:\Dev\RegisterPeople\src\RegisterPeople\RegisterPeople.Infrastructure\bin\Debug\net5.0\RegisterPeople.Domain.dll
+C:\Dev\RegisterPeople\src\RegisterPeople\RegisterPeople.Infrastructure\bin\Debug\net5.0\RegisterPeople.Domain.pdb
+C:\Dev\RegisterPeople\src\RegisterPeople\RegisterPeople.Infrastructure\obj\Debug\net5.0\RegisterPeople.Infrastructure.csproj.AssemblyReference.cache
+C:\Dev\RegisterPeople\src\RegisterPeople\RegisterPeople.Infrastructure\obj\Debug\net5.0\RegisterPeople.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Dev\RegisterPeople\src\RegisterPeople\RegisterPeople.Infrastructure\obj\Debug\net5.0\RegisterPeople.Infrastructure.AssemblyInfoInputs.cache
+C:\Dev\RegisterPeople\src\RegisterPeople\RegisterPeople.Infrastructure\obj\Debug\net5.0\RegisterPeople.Infrastructure.AssemblyInfo.cs
+C:\Dev\RegisterPeople\src\RegisterPeople\RegisterPeople.Infrastructure\obj\Debug\net5.0\RegisterPeople.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Dev\RegisterPeople\src\RegisterPeople\RegisterPeople.Infrastructure\obj\Debug\net5.0\RegisterPeople.Infrastructure.csproj.CopyComplete
+C:\Dev\RegisterPeople\src\RegisterPeople\RegisterPeople.Infrastructure\obj\Debug\net5.0\RegisterPeople.Infrastructure.dll
+C:\Dev\RegisterPeople\src\RegisterPeople\RegisterPeople.Infrastructure\obj\Debug\net5.0\ref\RegisterPeople.Infrastructure.dll
+C:\Dev\RegisterPeople\src\RegisterPeople\RegisterPeople.Infrastructure\obj\Debug\net5.0\RegisterPeople.Infrastructure.pdb

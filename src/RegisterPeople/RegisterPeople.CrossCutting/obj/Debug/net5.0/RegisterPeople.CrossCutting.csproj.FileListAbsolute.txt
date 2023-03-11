@@ -1,0 +1,12 @@
+C:\Dev\RegisterPeople\src\RegisterPeople\RegisterPeople.CrossCutting\bin\Debug\net5.0\RegisterPeople.CrossCutting.deps.json
+C:\Dev\RegisterPeople\src\RegisterPeople\RegisterPeople.CrossCutting\bin\Debug\net5.0\RegisterPeople.CrossCutting.dll
+C:\Dev\RegisterPeople\src\RegisterPeople\RegisterPeople.CrossCutting\bin\Debug\net5.0\ref\RegisterPeople.CrossCutting.dll
+C:\Dev\RegisterPeople\src\RegisterPeople\RegisterPeople.CrossCutting\bin\Debug\net5.0\RegisterPeople.CrossCutting.pdb
+C:\Dev\RegisterPeople\src\RegisterPeople\RegisterPeople.CrossCutting\obj\Debug\net5.0\RegisterPeople.CrossCutting.csproj.AssemblyReference.cache
+C:\Dev\RegisterPeople\src\RegisterPeople\RegisterPeople.CrossCutting\obj\Debug\net5.0\RegisterPeople.CrossCutting.GeneratedMSBuildEditorConfig.editorconfig
+C:\Dev\RegisterPeople\src\RegisterPeople\RegisterPeople.CrossCutting\obj\Debug\net5.0\RegisterPeople.CrossCutting.AssemblyInfoInputs.cache
+C:\Dev\RegisterPeople\src\RegisterPeople\RegisterPeople.CrossCutting\obj\Debug\net5.0\RegisterPeople.CrossCutting.AssemblyInfo.cs
+C:\Dev\RegisterPeople\src\RegisterPeople\RegisterPeople.CrossCutting\obj\Debug\net5.0\RegisterPeople.CrossCutting.csproj.CoreCompileInputs.cache
+C:\Dev\RegisterPeople\src\RegisterPeople\RegisterPeople.CrossCutting\obj\Debug\net5.0\RegisterPeople.CrossCutting.dll
+C:\Dev\RegisterPeople\src\RegisterPeople\RegisterPeople.CrossCutting\obj\Debug\net5.0\ref\RegisterPeople.CrossCutting.dll
+C:\Dev\RegisterPeople\src\RegisterPeople\RegisterPeople.CrossCutting\obj\Debug\net5.0\RegisterPeople.CrossCutting.pdb
