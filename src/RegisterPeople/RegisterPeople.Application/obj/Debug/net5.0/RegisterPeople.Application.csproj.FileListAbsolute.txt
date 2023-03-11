@@ -10,3 +10,6 @@ C:\Dev\RegisterPeople\src\RegisterPeople\RegisterPeople.Application\obj\Debug\ne
 C:\Dev\RegisterPeople\src\RegisterPeople\RegisterPeople.Application\obj\Debug\net5.0\RegisterPeople.Application.dll
 C:\Dev\RegisterPeople\src\RegisterPeople\RegisterPeople.Application\obj\Debug\net5.0\ref\RegisterPeople.Application.dll
 C:\Dev\RegisterPeople\src\RegisterPeople\RegisterPeople.Application\obj\Debug\net5.0\RegisterPeople.Application.pdb
+C:\Dev\RegisterPeople\src\RegisterPeople\RegisterPeople.Application\bin\Debug\net5.0\RegisterPeople.Domain.dll
+C:\Dev\RegisterPeople\src\RegisterPeople\RegisterPeople.Application\bin\Debug\net5.0\RegisterPeople.Domain.pdb
+C:\Dev\RegisterPeople\src\RegisterPeople\RegisterPeople.Application\obj\Debug\net5.0\RegisterPeople.Application.csproj.CopyComplete

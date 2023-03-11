@@ -10,3 +10,10 @@ C:\Dev\RegisterPeople\src\RegisterPeople\RegisterPeople.CrossCutting\obj\Debug\n
 C:\Dev\RegisterPeople\src\RegisterPeople\RegisterPeople.CrossCutting\obj\Debug\net5.0\RegisterPeople.CrossCutting.dll
 C:\Dev\RegisterPeople\src\RegisterPeople\RegisterPeople.CrossCutting\obj\Debug\net5.0\ref\RegisterPeople.CrossCutting.dll
 C:\Dev\RegisterPeople\src\RegisterPeople\RegisterPeople.CrossCutting\obj\Debug\net5.0\RegisterPeople.CrossCutting.pdb
+C:\Dev\RegisterPeople\src\RegisterPeople\RegisterPeople.CrossCutting\bin\Debug\net5.0\RegisterPeople.Application.dll
+C:\Dev\RegisterPeople\src\RegisterPeople\RegisterPeople.CrossCutting\bin\Debug\net5.0\RegisterPeople.Domain.dll
+C:\Dev\RegisterPeople\src\RegisterPeople\RegisterPeople.CrossCutting\bin\Debug\net5.0\RegisterPeople.Infrastructure.dll
+C:\Dev\RegisterPeople\src\RegisterPeople\RegisterPeople.CrossCutting\bin\Debug\net5.0\RegisterPeople.Application.pdb
+C:\Dev\RegisterPeople\src\RegisterPeople\RegisterPeople.CrossCutting\bin\Debug\net5.0\RegisterPeople.Infrastructure.pdb
+C:\Dev\RegisterPeople\src\RegisterPeople\RegisterPeople.CrossCutting\bin\Debug\net5.0\RegisterPeople.Domain.pdb
+C:\Dev\RegisterPeople\src\RegisterPeople\RegisterPeople.CrossCutting\obj\Debug\net5.0\RegisterPeople.CrossCutting.csproj.CopyComplete
