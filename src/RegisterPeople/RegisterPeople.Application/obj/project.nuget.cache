@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "J1qwb7AL/rGAaRSIq5wHw0d96CWXG2fPbnkXan2Ha782LsJLQiwPuJPS0EUcHFPoRi3S4nlf9kCreYFwV0QvPw==",
+  "dgSpecHash": "VGItCMFZiE0xkIy1z1XykeJh0vRkcKMRswDVHO8LSTGtNz+LaMqFf0ZQyMRpD7Sj4fsyxL9RYAvQ02G2HwaEtw==",
   "success": true,
   "projectFilePath": "C:\\Dev\\RegisterPeople\\src\\RegisterPeople\\RegisterPeople.Application\\RegisterPeople.Application.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Igor\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
+    "C:\\Users\\Igor\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512"
+  ],
   "logs": []
 }
