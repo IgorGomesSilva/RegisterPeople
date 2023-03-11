@@ -1,0 +1,12 @@
+C:\Dev\RegisterPeople\src\RegisterPeople\RegisterPeople.Application\bin\Debug\net5.0\RegisterPeople.Application.deps.json
+C:\Dev\RegisterPeople\src\RegisterPeople\RegisterPeople.Application\bin\Debug\net5.0\RegisterPeople.Application.dll
+C:\Dev\RegisterPeople\src\RegisterPeople\RegisterPeople.Application\bin\Debug\net5.0\ref\RegisterPeople.Application.dll
+C:\Dev\RegisterPeople\src\RegisterPeople\RegisterPeople.Application\bin\Debug\net5.0\RegisterPeople.Application.pdb
+C:\Dev\RegisterPeople\src\RegisterPeople\RegisterPeople.Application\obj\Debug\net5.0\RegisterPeople.Application.csproj.AssemblyReference.cache
+C:\Dev\RegisterPeople\src\RegisterPeople\RegisterPeople.Application\obj\Debug\net5.0\RegisterPeople.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Dev\RegisterPeople\src\RegisterPeople\RegisterPeople.Application\obj\Debug\net5.0\RegisterPeople.Application.AssemblyInfoInputs.cache
+C:\Dev\RegisterPeople\src\RegisterPeople\RegisterPeople.Application\obj\Debug\net5.0\RegisterPeople.Application.AssemblyInfo.cs
+C:\Dev\RegisterPeople\src\RegisterPeople\RegisterPeople.Application\obj\Debug\net5.0\RegisterPeople.Application.csproj.CoreCompileInputs.cache
+C:\Dev\RegisterPeople\src\RegisterPeople\RegisterPeople.Application\obj\Debug\net5.0\RegisterPeople.Application.dll
+C:\Dev\RegisterPeople\src\RegisterPeople\RegisterPeople.Application\obj\Debug\net5.0\ref\RegisterPeople.Application.dll
+C:\Dev\RegisterPeople\src\RegisterPeople\RegisterPeople.Application\obj\Debug\net5.0\RegisterPeople.Application.pdb
