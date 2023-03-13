@@ -25,11 +25,12 @@ GO
 PRINT N'Creating [RegisterPeopleDB].[Address]...';
 
 CREATE TABLE [Address] (
-    Id int NOT NULL,
+    Id int IDENTITY NOT NULL,
     Logadouro varchar(150) NOT NULL,
     Bairro varchar(100) NOT NULL,
     Numero varchar(15) NOT NULL,
     Complemento varchar(255) NULL,
+    Cidade varchar(50) NOT NULL,
     Estado varchar(30) NOT NULL,
     Pais varchar(50) NOT NULL,
     CEP varchar(8) NOT NULL,
