@@ -32,7 +32,7 @@ namespace RegisterPeople.API.Controllers
         {
             try
             {
-                return Ok(await _addressApplicationService.GetAll());
+                return Ok(await _addressApplicationService.GetAllAsync());
             }
             catch (ArgumentException e)
             {
@@ -49,10 +49,32 @@ namespace RegisterPeople.API.Controllers
         {
             try
             {
-                var result = await _addressApplicationService.GetById(id);
+                var result = await _addressApplicationService.GetByIdAsync(id);
                 if (result == null)
                 {
                     return NotFound(false.AsNotFoundResponse("Endereço não encontrado."));
+                }
+                return Ok(result);
+            }
+            catch (ArgumentException e)
+            {
+                return StatusCode((int)HttpStatusCode.InternalServerError, e.Message);
+            }
+        }
+
+        [HttpGet]
+        [Route("person/{IdPerson}")]
+        [SwaggerOperation(Summary = "Get by IdPerson", Description = "Get many address by IdPerson")]
+        [SwaggerResponse(200, "Everything Worked")]
+        [SwaggerResponse(500, "Internal Server Error")]
+        public async Task<ActionResult> GetByIdPersonAsync(int IdPerson)
+        {
+            try
+            {
+                var result = await _addressApplicationService.GetByIdPersonAsync(IdPerson);
+                if (result == null)
+                {
+                    return NotFound(false.AsNotFoundResponse("Endereço não encontrado para essa Pessoa."));
                 }
                 return Ok(result);
             }
@@ -70,7 +92,7 @@ namespace RegisterPeople.API.Controllers
         {
             try
             {
-                await _addressApplicationService.Add(address);
+                await _addressApplicationService.AddAsync(address);
 
                 return Ok(true.AsSuccessResponse("Endereço registrado com sucesso."));
             }
@@ -89,7 +111,7 @@ namespace RegisterPeople.API.Controllers
             try
             {
 
-                await _addressApplicationService.Update(address);
+                await _addressApplicationService.UpdateAsync(address);
 
                 return Ok(true.AsSuccessResponse("Endereço atualizado com sucesso."));
             }
@@ -101,14 +123,14 @@ namespace RegisterPeople.API.Controllers
 
         [HttpDelete]
         [Route("{id}")]
-        [SwaggerOperation(Summary = "Delete", Description = "Delete address")]
-        [SwaggerResponse(200, "address Delete")]
+        [SwaggerOperation(Summary = "Remove", Description = "Remove address")]
+        [SwaggerResponse(200, "Address Remove")]
         [SwaggerResponse(500, "Internal Server Error")]
-        public async Task<ActionResult> Delete(int id)
+        public async Task<ActionResult> RemoveAsync(int id)
         {
             try
             {
-                await _addressApplicationService.Remove(id);
+                await _addressApplicationService.RemoveAsync(id);
 
                 return Ok(true.AsSuccessResponse("Endereço deletado com sucesso."));
             }

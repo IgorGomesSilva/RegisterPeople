@@ -5,14 +5,14 @@ namespace RegisterPeople.Domain.Interfaces.Repository
 {
     public interface IRepositoryBase<TEntity> where TEntity : class
     {
-        Task Add(TEntity obj);
+        Task AddAsync(TEntity obj);
 
-        Task Update(TEntity obj);
+        Task UpdateAsync(TEntity obj);
 
-        Task Remove(TEntity obj);
+        Task RemoveAsync(TEntity obj);
 
-        Task<IEnumerable<TEntity>> GetAll();
+        Task<IEnumerable<TEntity>> GetAllAsync();
 
-        Task<TEntity> GetById(int id);
+        Task<TEntity> GetByIdAsync(int id);
     }
 }

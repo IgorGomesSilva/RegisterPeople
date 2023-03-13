@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.3] - 2023-03-13
+
+### Fix Name Methods
+
+- Fix Name Methods in Controllers and Services.
+
+
 ## [1.0.2] - 2023-03-13
 
 ### Adicionando Controllers

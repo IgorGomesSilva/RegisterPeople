@@ -26,11 +26,11 @@ namespace RegisterPeople.API.Controllers
         [SwaggerOperation(Summary = "Get all", Description = "Get All persons")]
         [SwaggerResponse(200, "Everything Worked")]
         [SwaggerResponse(500, "Internal Server Error")]
-        public async Task<ActionResult> GetAll()
+        public async Task<ActionResult> GetAllAsync()
         {
             try
             {
-                return Ok(await _personApplicationService.GetAll());
+                return Ok(await _personApplicationService.GetAllAsync());
             }
             catch (ArgumentException e)
             {
@@ -43,11 +43,11 @@ namespace RegisterPeople.API.Controllers
         [SwaggerOperation(Summary = "Get by Id", Description = "Get one person by Id")]
         [SwaggerResponse(200, "Everything Worked")]
         [SwaggerResponse(500, "Internal Server Error")]
-        public async Task<ActionResult> GetById(int id)
+        public async Task<ActionResult> GetByIdAsync(int id)
         {
             try
             {
-                var result = await _personApplicationService.GetById(id);
+                var result = await _personApplicationService.GetByIdAsync(id);
                 if (result == null)
                 {
                     return NotFound(false.AsNotFoundResponse("Pessoa não encontrada."));
@@ -64,7 +64,7 @@ namespace RegisterPeople.API.Controllers
         [SwaggerOperation(Summary = "Adding", Description = "Adding person")]
         [SwaggerResponse(201, "Person Create")]
         [SwaggerResponse(500, "Internal Server Error")]
-        public async Task<ActionResult> Add([FromBody] PersonDtoCreate person)
+        public async Task<ActionResult> AddAsync([FromBody] PersonDtoCreate person)
         {
             try
             {
@@ -78,7 +78,7 @@ namespace RegisterPeople.API.Controllers
                     return UnprocessableEntity(false.AsUnprocessableResponse("Por favor entre com um CPF válido."));
                 }
 
-                await _personApplicationService.Add(person);
+                await _personApplicationService.AddAsync(person);
 
                 return Ok(true.AsSuccessResponse("Pessoa registrada com sucesso."));
             }
@@ -92,7 +92,7 @@ namespace RegisterPeople.API.Controllers
         [SwaggerOperation(Summary = "Update", Description = "Update person")]
         [SwaggerResponse(204, "Person Update")]
         [SwaggerResponse(500, "Internal Server Error")]
-        public async Task<ActionResult> Update([FromBody] PersonDtoUpdate person)
+        public async Task<ActionResult> UpdateAsync([FromBody] PersonDtoUpdate person)
         {
             try
             {
@@ -101,7 +101,7 @@ namespace RegisterPeople.API.Controllers
                     return UnprocessableEntity(false.AsUnprocessableResponse("Por favor entre com um e-mail válido."));
                 }
 
-                await _personApplicationService.Update(person);
+                await _personApplicationService.UpdateAsync(person);
 
                 return Ok(true.AsSuccessResponse("Pessoa atualizada com sucesso."));
             }
@@ -113,14 +113,14 @@ namespace RegisterPeople.API.Controllers
 
         [HttpDelete]
         [Route("{id}")]
-        [SwaggerOperation(Summary = "Delete", Description = "Delete person")]
-        [SwaggerResponse(200, "Person Delete")]
+        [SwaggerOperation(Summary = "Remove", Description = "Remove person")]
+        [SwaggerResponse(200, "Person Remove")]
         [SwaggerResponse(500, "Internal Server Error")]
-        public async Task<ActionResult> Delete(int id)
+        public async Task<ActionResult> RemoveAsync(int id)
         {
             try
             {
-                await _personApplicationService.Remove(id);
+                await _personApplicationService.RemoveAsync(id);
 
                 return Ok(true.AsSuccessResponse("Pessoa deletada com sucesso."));
             }
