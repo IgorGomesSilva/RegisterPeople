@@ -1,17 +1,18 @@
 ﻿using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace RegisterPeople.Domain.Interfaces.Service
 {
     public interface IServiceBase<TEntity> where TEntity : class
     {
-        void Add(TEntity obj);
+        Task Add(TEntity obj);
 
-        void Update(TEntity obj);
+        Task Update(TEntity obj);
 
-        void Remove(TEntity obj);
+        Task Remove(TEntity obj);
 
-        IEnumerable<TEntity> GetAll();
+        Task<IEnumerable<TEntity>> GetAll();
 
-        TEntity GetById(int id);
+        Task<TEntity> GetById(int id);
     }
 }

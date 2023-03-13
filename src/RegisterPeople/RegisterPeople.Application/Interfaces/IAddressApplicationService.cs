@@ -1,14 +1,16 @@
 ﻿using RegisterPeople.Application.Dtos;
+using RegisterPeople.Application.Dtos.Address;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace RegisterPeople.Application.Interfaces
 {
     public interface IAddressApplicationService
     {
-        void Add(AddressDto addressDto);
-        void Update(AddressDto addressDto);
-        void Remove(AddressDto addressDto);
-        IEnumerable<AddressDto> GetAll();
-        AddressDto GetById(int id);
+        Task Add(AddressDtoCreate addressDto);
+        Task Update(AddressDtoUpdate addressDto);
+        Task Remove(int id);
+        Task<IEnumerable<AddressDto>> GetAll();
+        Task<AddressDto> GetById(int id);
     }
 }

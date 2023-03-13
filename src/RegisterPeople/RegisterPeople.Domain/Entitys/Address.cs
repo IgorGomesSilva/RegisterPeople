@@ -2,6 +2,7 @@
 {
     public class Address : Base
     {
+        public int IdPerson { get; set; }
         public string Logadouro { get; set; }
         public string Bairro { get; set; }
         public string Numero { get; set; }

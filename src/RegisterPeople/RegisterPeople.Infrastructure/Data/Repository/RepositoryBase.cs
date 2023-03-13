@@ -3,6 +3,7 @@ using RegisterPeople.Domain.Interfaces.Repository;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 
 namespace RegisterPeople.Infrastructure.Data.Repository
 {
@@ -15,12 +16,12 @@ namespace RegisterPeople.Infrastructure.Data.Repository
             this.sqlContext = sqlContext;
         }
 
-        public void Add(TEntity obj)
+        public async Task Add(TEntity obj)
         {
             try
             {
                 sqlContext.Set<TEntity>().Add(obj);
-                sqlContext.SaveChanges();
+                await sqlContext.SaveChangesAsync();
             }
             catch (Exception ex)
             {
@@ -28,22 +29,22 @@ namespace RegisterPeople.Infrastructure.Data.Repository
             }
         }
 
-        public IEnumerable<TEntity> GetAll()
+        public async Task<IEnumerable<TEntity>> GetAll()
         {
-            return sqlContext.Set<TEntity>().ToList();
+            return await sqlContext.Set<TEntity>().ToListAsync();
         }
 
-        public TEntity GetById(int id)
+        public async Task<TEntity> GetById(int id)
         {
-            return sqlContext.Set<TEntity>().Find(id);
+            return await sqlContext.Set<TEntity>().FindAsync(id);
         }
 
-        public void Remove(TEntity obj)
+        public async Task Remove(TEntity obj)
         {
             try
             {
                 sqlContext.Set<TEntity>().Remove(obj);
-                sqlContext.SaveChanges();
+                await sqlContext.SaveChangesAsync();
             }
             catch (Exception ex)
             {
@@ -51,12 +52,12 @@ namespace RegisterPeople.Infrastructure.Data.Repository
             }
         }
 
-        public void Update(TEntity obj)
+        public async Task Update(TEntity obj)
         {
             try
             {
                 sqlContext.Entry(obj).State = EntityState.Modified;
-                sqlContext.SaveChanges();
+                await sqlContext.SaveChangesAsync();
             }
             catch (Exception ex)
             {

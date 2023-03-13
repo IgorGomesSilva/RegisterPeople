@@ -1,8 +1,9 @@
-﻿namespace RegisterPeople.Application.Dtos
+﻿namespace RegisterPeople.Application.Dtos.Address
 {
     public class AddressDto
     {
         public int? Id { get; set; }
+        public int IdPerson { get; set; }
         public string Logadouro { get; set; }
         public string Bairro { get; set; }
         public string Numero { get; set; }

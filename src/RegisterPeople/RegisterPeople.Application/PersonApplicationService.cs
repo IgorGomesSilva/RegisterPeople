@@ -1,9 +1,11 @@
 ﻿using AutoMapper;
 using RegisterPeople.Application.Dtos;
+using RegisterPeople.Application.Dtos.Person;
 using RegisterPeople.Application.Interfaces;
 using RegisterPeople.Domain.Entitys;
 using RegisterPeople.Domain.Interfaces.Service;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace RegisterPeople.Application
 {
@@ -18,38 +20,38 @@ namespace RegisterPeople.Application
             _mapper = mapper;
         }
 
-        public void Add(PersonDto personDto)
+        public async Task Add(PersonDtoCreate personDto)
         {
             var person = _mapper.Map<Person>(personDto);
-            _personService.Add(person);
+            await _personService.Add(person);
         }
 
-        public IEnumerable<PersonDto> GetAll()
+        public async Task<IEnumerable<PersonDto>> GetAll()
         {
-            var persons = _personService.GetAll();
+            var persons = await _personService.GetAll();
             var personsDto = _mapper.Map<IEnumerable<PersonDto>>(persons);
 
             return personsDto;
         }
 
-        public PersonDto GetById(int id)
+        public async Task<PersonDto> GetById(int id)
         {
-            var person = _personService.GetById(id);
+            var person = await _personService.GetById(id);
             var personDto = _mapper.Map<PersonDto>(person);
 
             return personDto;
         }
 
-        public void Remove(PersonDto personDto)
+        public async Task Remove(int id)
         {
-            var person = _mapper.Map<Person>(personDto);
-            _personService.Remove(person);
+            var person = await _personService.GetById(id);
+            await _personService.Remove(person);
         }
 
-        public void Update(PersonDto personDto)
+        public async Task Update(PersonDtoUpdate personDto)
         {
             var person = _mapper.Map<Person>(personDto);
-            _personService.Update(person);
+            await _personService.Update(person);
         }
     }
 }

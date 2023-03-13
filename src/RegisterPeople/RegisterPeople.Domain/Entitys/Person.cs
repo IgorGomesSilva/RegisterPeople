@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace RegisterPeople.Domain.Entitys
 {
@@ -10,5 +11,7 @@ namespace RegisterPeople.Domain.Entitys
         public DateTime DataCadastro { get; set; }
         public string CPF { get; set; }
         public bool IsAtivo { get; set; }
+
+        public virtual ICollection<Address> Address { get; set; }
     }
 }

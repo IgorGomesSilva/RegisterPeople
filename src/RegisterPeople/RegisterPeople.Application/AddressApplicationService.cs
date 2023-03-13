@@ -1,9 +1,11 @@
 ﻿using AutoMapper;
 using RegisterPeople.Application.Dtos;
+using RegisterPeople.Application.Dtos.Address;
 using RegisterPeople.Application.Interfaces;
 using RegisterPeople.Domain.Entitys;
 using RegisterPeople.Domain.Interfaces.Service;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace RegisterPeople.Application
 {
@@ -18,38 +20,38 @@ namespace RegisterPeople.Application
             _mapper = mapper;
         }
 
-        public void Add(AddressDto addressDto)
+        public async Task Add(AddressDtoCreate addressDto)
         {
             var address = _mapper.Map<Address>(addressDto);
-            _addressService.Add(address);
+            await _addressService.Add(address);
         }
 
-        public IEnumerable<AddressDto> GetAll()
+        public async Task<IEnumerable<AddressDto>> GetAll()
         {
-            var addresss = _addressService.GetAll();
+            var addresss = await _addressService.GetAll();
             var addresssDto = _mapper.Map<IEnumerable<AddressDto>>(addresss);
 
             return addresssDto;
         }
 
-        public AddressDto GetById(int id)
+        public async Task<AddressDto> GetById(int id)
         {
-            var address = _addressService.GetById(id);
+            var address = await _addressService.GetById(id);
             var addressDto = _mapper.Map<AddressDto>(address);
 
             return addressDto;
         }
 
-        public void Remove(AddressDto addressDto)
+        public async Task Remove(int id)
         {
-            var address = _mapper.Map<Address>(addressDto);
-            _addressService.Remove(address);
+            var address = await _addressService.GetById(id);
+            await _addressService.Remove(address);
         }
 
-        public void Update(AddressDto addressDto)
+        public async Task Update(AddressDtoUpdate addressDto)
         {
             var address = _mapper.Map<Address>(addressDto);
-            _addressService.Update(address);
+            await _addressService.Update(address);
         }
     }
 }
