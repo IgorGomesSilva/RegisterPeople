@@ -16,7 +16,7 @@ namespace RegisterPeople.Infrastructure.Data.Repository
             this.sqlContext = sqlContext;
         }
 
-        public async Task Add(TEntity obj)
+        public async Task AddAsync(TEntity obj)
         {
             try
             {
@@ -29,17 +29,17 @@ namespace RegisterPeople.Infrastructure.Data.Repository
             }
         }
 
-        public async Task<IEnumerable<TEntity>> GetAll()
+        public async Task<IEnumerable<TEntity>> GetAllAsync()
         {
             return await sqlContext.Set<TEntity>().ToListAsync();
         }
 
-        public async Task<TEntity> GetById(int id)
+        public async Task<TEntity> GetByIdAsync(int id)
         {
             return await sqlContext.Set<TEntity>().FindAsync(id);
         }
 
-        public async Task Remove(TEntity obj)
+        public async Task RemoveAsync(TEntity obj)
         {
             try
             {
@@ -52,7 +52,7 @@ namespace RegisterPeople.Infrastructure.Data.Repository
             }
         }
 
-        public async Task Update(TEntity obj)
+        public async Task UpdateAsync(TEntity obj)
         {
             try
             {

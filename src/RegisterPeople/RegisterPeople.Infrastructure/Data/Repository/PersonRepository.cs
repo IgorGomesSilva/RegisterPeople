@@ -16,12 +16,12 @@ namespace RegisterPeople.Infrastructure.Data.Repository
             _sqlContext = sqlContext;
         }
 
-        public async Task<IEnumerable<Person>> GetAll()
+        public async Task<IEnumerable<Person>> GetAllAsync()
         {
             return await _sqlContext.Person.Include(x => x.Address).OrderBy(x => x.Id).ToListAsync();
         }
 
-        public async Task<Person> GetById(int id)
+        public async Task<Person> GetByIdAsync(int id)
         {
             return await _sqlContext.Person.Include(x => x.Address).FirstOrDefaultAsync(x => x.Id == id);
         }

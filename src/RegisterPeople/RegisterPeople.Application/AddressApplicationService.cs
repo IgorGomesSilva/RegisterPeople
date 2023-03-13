@@ -20,38 +20,46 @@ namespace RegisterPeople.Application
             _mapper = mapper;
         }
 
-        public async Task Add(AddressDtoCreate addressDto)
+        public async Task AddAsync(AddressDtoCreate addressDto)
         {
             var address = _mapper.Map<Address>(addressDto);
-            await _addressService.Add(address);
+            await _addressService.AddAsync(address);
         }
 
-        public async Task<IEnumerable<AddressDto>> GetAll()
+        public async Task<IEnumerable<AddressDto>> GetAllAsync()
         {
-            var addresss = await _addressService.GetAll();
-            var addresssDto = _mapper.Map<IEnumerable<AddressDto>>(addresss);
+            var address = await _addressService.GetAllAsync();
+            var addresssDto = _mapper.Map<IEnumerable<AddressDto>>(address);
 
             return addresssDto;
         }
 
-        public async Task<AddressDto> GetById(int id)
+        public async Task<AddressDto> GetByIdAsync(int id)
         {
-            var address = await _addressService.GetById(id);
+            var address = await _addressService.GetByIdAsync(id);
             var addressDto = _mapper.Map<AddressDto>(address);
 
             return addressDto;
         }
 
-        public async Task Remove(int id)
+        public async Task RemoveAsync(int id)
         {
-            var address = await _addressService.GetById(id);
-            await _addressService.Remove(address);
+            var address = await _addressService.GetByIdAsync(id);
+            await _addressService.RemoveAsync(address);
         }
 
-        public async Task Update(AddressDtoUpdate addressDto)
+        public async Task UpdateAsync(AddressDtoUpdate addressDto)
         {
             var address = _mapper.Map<Address>(addressDto);
-            await _addressService.Update(address);
+            await _addressService.UpdateAsync(address);
+        }
+
+        public async Task<IEnumerable<AddressDto>> GetByIdPersonAsync(int idPerson)
+        {
+            var address = await _addressService.GetByIdPersonAsync(idPerson);
+            var addressDto = _mapper.Map<IEnumerable<AddressDto>>(address);
+
+            return addressDto;
         }
     }
 }

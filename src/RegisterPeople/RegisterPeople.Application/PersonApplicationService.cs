@@ -20,38 +20,38 @@ namespace RegisterPeople.Application
             _mapper = mapper;
         }
 
-        public async Task Add(PersonDtoCreate personDto)
+        public async Task AddAsync(PersonDtoCreate personDto)
         {
             var person = _mapper.Map<Person>(personDto);
-            await _personService.Add(person);
+            await _personService.AddAsync(person);
         }
 
-        public async Task<IEnumerable<PersonDto>> GetAll()
+        public async Task<IEnumerable<PersonDto>> GetAllAsync()
         {
-            var persons = await _personService.GetAll();
+            var persons = await _personService.GetAllAsync();
             var personsDto = _mapper.Map<IEnumerable<PersonDto>>(persons);
 
             return personsDto;
         }
 
-        public async Task<PersonDto> GetById(int id)
+        public async Task<PersonDto> GetByIdAsync(int id)
         {
-            var person = await _personService.GetById(id);
+            var person = await _personService.GetByIdAsync(id);
             var personDto = _mapper.Map<PersonDto>(person);
 
             return personDto;
         }
 
-        public async Task Remove(int id)
+        public async Task RemoveAsync(int id)
         {
-            var person = await _personService.GetById(id);
-            await _personService.Remove(person);
+            var person = await _personService.GetByIdAsync(id);
+            await _personService.RemoveAsync(person);
         }
 
-        public async Task Update(PersonDtoUpdate personDto)
+        public async Task UpdateAsync(PersonDtoUpdate personDto)
         {
             var person = _mapper.Map<Person>(personDto);
-            await _personService.Update(person);
+            await _personService.UpdateAsync(person);
         }
     }
 }

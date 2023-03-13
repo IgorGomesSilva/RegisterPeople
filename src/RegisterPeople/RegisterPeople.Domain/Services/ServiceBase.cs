@@ -14,29 +14,29 @@ namespace RegisterPeople.Domain.Services
             this.repository = repository;
         }
 
-        public async Task Add(TEntity obj)
+        public async Task AddAsync(TEntity obj)
         {
-            await repository.Add(obj);
+            await repository.AddAsync(obj);
         }
 
-        public async Task<IEnumerable<TEntity>> GetAll()
+        public async Task<IEnumerable<TEntity>> GetAllAsync()
         {
-            return await repository.GetAll();
+            return await repository.GetAllAsync();
         }
 
-        public async Task<TEntity> GetById(int id)
+        public async Task<TEntity> GetByIdAsync(int id)
         {
-            return await repository.GetById(id);
+            return await repository.GetByIdAsync(id);
         }
 
-        public async Task Remove(TEntity obj)
+        public async Task RemoveAsync(TEntity obj)
         {
-            await repository.Remove(obj);
+            await repository.RemoveAsync(obj);
         }
 
-        public async Task Update(TEntity obj)
+        public async Task UpdateAsync(TEntity obj)
         {
-            await repository.Update(obj);
+            await repository.UpdateAsync(obj);
         }
     }
 }
