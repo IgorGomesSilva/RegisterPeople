@@ -4,6 +4,76 @@
     "C:\\Dev\\RegisterPeople\\src\\RegisterPeople\\RegisterPeople.CrossCutting\\RegisterPeople.CrossCutting.csproj": {}
   },
   "projects": {
+    "C:\\Dev\\RegisterPeople\\src\\RegisterPeople\\RegisterPeople.Application\\RegisterPeople.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Dev\\RegisterPeople\\src\\RegisterPeople\\RegisterPeople.Application\\RegisterPeople.Application.csproj",
+        "projectName": "RegisterPeople.Application",
+        "projectPath": "C:\\Dev\\RegisterPeople\\src\\RegisterPeople\\RegisterPeople.Application\\RegisterPeople.Application.csproj",
+        "packagesPath": "C:\\Users\\Igor\\.nuget\\packages\\",
+        "outputPath": "C:\\Dev\\RegisterPeople\\src\\RegisterPeople\\RegisterPeople.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Igor\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.telerik.com/nuget": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Dev\\RegisterPeople\\src\\RegisterPeople\\RegisterPeople.Domain\\RegisterPeople.Domain.csproj": {
+                "projectPath": "C:\\Dev\\RegisterPeople\\src\\RegisterPeople\\RegisterPeople.Domain\\RegisterPeople.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.114\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "C:\\Dev\\RegisterPeople\\src\\RegisterPeople\\RegisterPeople.CrossCutting\\RegisterPeople.CrossCutting.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -12,6 +82,79 @@
         "projectPath": "C:\\Dev\\RegisterPeople\\src\\RegisterPeople\\RegisterPeople.CrossCutting\\RegisterPeople.CrossCutting.csproj",
         "packagesPath": "C:\\Users\\Igor\\.nuget\\packages\\",
         "outputPath": "C:\\Dev\\RegisterPeople\\src\\RegisterPeople\\RegisterPeople.CrossCutting\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Igor\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.telerik.com/nuget": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Dev\\RegisterPeople\\src\\RegisterPeople\\RegisterPeople.Application\\RegisterPeople.Application.csproj": {
+                "projectPath": "C:\\Dev\\RegisterPeople\\src\\RegisterPeople\\RegisterPeople.Application\\RegisterPeople.Application.csproj"
+              },
+              "C:\\Dev\\RegisterPeople\\src\\RegisterPeople\\RegisterPeople.Infrastructure\\RegisterPeople.Infrastructure.csproj": {
+                "projectPath": "C:\\Dev\\RegisterPeople\\src\\RegisterPeople\\RegisterPeople.Infrastructure\\RegisterPeople.Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Autofac": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.114\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Dev\\RegisterPeople\\src\\RegisterPeople\\RegisterPeople.Domain\\RegisterPeople.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Dev\\RegisterPeople\\src\\RegisterPeople\\RegisterPeople.Domain\\RegisterPeople.Domain.csproj",
+        "projectName": "RegisterPeople.Domain",
+        "projectPath": "C:\\Dev\\RegisterPeople\\src\\RegisterPeople\\RegisterPeople.Domain\\RegisterPeople.Domain.csproj",
+        "packagesPath": "C:\\Users\\Igor\\.nuget\\packages\\",
+        "outputPath": "C:\\Dev\\RegisterPeople\\src\\RegisterPeople\\RegisterPeople.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -45,6 +188,84 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.114\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Dev\\RegisterPeople\\src\\RegisterPeople\\RegisterPeople.Infrastructure\\RegisterPeople.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Dev\\RegisterPeople\\src\\RegisterPeople\\RegisterPeople.Infrastructure\\RegisterPeople.Infrastructure.csproj",
+        "projectName": "RegisterPeople.Infrastructure",
+        "projectPath": "C:\\Dev\\RegisterPeople\\src\\RegisterPeople\\RegisterPeople.Infrastructure\\RegisterPeople.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\Igor\\.nuget\\packages\\",
+        "outputPath": "C:\\Dev\\RegisterPeople\\src\\RegisterPeople\\RegisterPeople.Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Igor\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.telerik.com/nuget": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Dev\\RegisterPeople\\src\\RegisterPeople\\RegisterPeople.Domain\\RegisterPeople.Domain.csproj": {
+                "projectPath": "C:\\Dev\\RegisterPeople\\src\\RegisterPeople\\RegisterPeople.Domain\\RegisterPeople.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "EntityFramework": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

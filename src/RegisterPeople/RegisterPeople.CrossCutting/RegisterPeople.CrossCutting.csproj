@@ -4,4 +4,13 @@
     <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Autofac" Version="5.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\RegisterPeople.Application\RegisterPeople.Application.csproj" />
+    <ProjectReference Include="..\RegisterPeople.Infrastructure\RegisterPeople.Infrastructure.csproj" />
+  </ItemGroup>
+
 </Project>
